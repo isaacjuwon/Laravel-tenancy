@@ -1,0 +1,47 @@
+{
+    "name": "isaacjuwon/laravel-tenancy",
+    "description": "A simple, lightweight tenancy solution for Laravel.",
+    "keywords": [
+        "isaacjuwon",
+        "laravel",
+        "tenancy",
+        "multi-tenant",
+        "saas"
+    ],
+    "homepage": "https://github.com/isaacjuwon/laravel-tenancy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Isaacjuwon",
+            "email": "hello@isaacjuwon.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/queue": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Isaacjuwon\\LaravelTenancy\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Isaacjuwon\\LaravelTenancy\\TenancyServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
